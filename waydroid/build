@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+install -dm755 "$1/usr/lib/waydroid"
+install -dm755 "$1/usr/bin"
+cp -r tools data "$1/usr/lib/waydroid/"
+cp waydroid.py "$1/usr/lib/waydroid/"
+ln -s /usr/lib/waydroid/waydroid.py "$1/usr/bin/waydroid"
+
+install -Dm644 -t "$1/etc/gbinder.d" gbinder/anbox.conf

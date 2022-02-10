@@ -1,0 +1,12 @@
+#!/bin/sh -e
+
+./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --localstatedir=/var \
+    --disable-apparmor \
+    --with-distro=kiss \
+    --disable-werror \
+
+make
+make DESTDIR="$1" install

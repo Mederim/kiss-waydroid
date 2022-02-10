@@ -1,0 +1,4 @@
+#!/bin/sh -e
+
+make KEEP_SYMBOLS=1 release pkgconfig
+make DESTDIR="$1" install-dev

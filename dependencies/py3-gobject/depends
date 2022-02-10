@@ -1,0 +1,6 @@
+cairo
+glib
+gobject-introspection
+libffi
+meson make
+python
