@@ -1,10 +1,16 @@
 # kiss-waydroid
 kiss repo to package waydroid
 
-# Install
+# Install Repo
 this repo need dependencies from kiss-community repo to build.
 
 https://github.com/kiss-community/community
+
+#DKMS modules
+Use anbox-modules repo and dkms to install the modules necessary
+
+https://github.com/choff/anbox-modules
+
 
 # Kernel options you need to enable to netfilter
 
