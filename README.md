@@ -76,6 +76,6 @@ and update grub config
 
 `doas grub-mkconfig -o /boot/grub/grub.cfg`
 
-# Mount cgroups after start waydroid container
+# Mount cgroups before start waydroid container
 
 `doas mount -t cgroup2 none /sys/fs/cgroup/`
